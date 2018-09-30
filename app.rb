@@ -36,7 +36,7 @@ class App < Sinatra::Base
   elsif @operation == "subtract"
     @operated_numbers = params[:number1].to_i - params[:number2].to_i
   else
-    @operated_numbers
+    @operated_numbers = params[:number1].to_i/params[:number2].to_i
 
     @operated_numbers.to_s
   end
