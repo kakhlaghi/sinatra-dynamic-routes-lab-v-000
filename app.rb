@@ -34,6 +34,8 @@ class App < Sinatra::Base
   elsif @operation == "multiply"
     @operated_numbers = params[:number1].to_i*params[:number2].to_i
   elsif @operation == "subtract"
+    @operated_numbers = params[:number].to_i - 
+    
     @operated_numbers.to_s
   end
 end
