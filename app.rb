@@ -37,7 +37,7 @@ class App < Sinatra::Base
     @operated_numbers = params[:number1].to_i - params[:number2].to_i
   else
     @operated_numbers = params[:number1].to_i/params[:number2].to_i
-
+  end
     @operated_numbers.to_s
   end
 end
